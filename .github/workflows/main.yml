@@ -27,4 +27,3 @@ jobs:
           npm install --force
           nohup npm start &
         working-directory: ./frontend
-
