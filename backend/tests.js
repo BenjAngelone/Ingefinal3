@@ -47,7 +47,6 @@ describe('Backend API Tests', () => {
         // Ajusta esto según cómo tu backend procesa la palabra en espejo
         const esperadoEnEspejo = "tseT";
 
-        // Guardamos la palabra mediante una solicitud POST
         const postResponse = await fetch('http://localhost:8080/api/palabra', {
             method: 'POST',
             headers: {
