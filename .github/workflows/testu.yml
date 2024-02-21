@@ -3,7 +3,7 @@ name: Build and Testing
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   test:
     runs-on: ubuntu-latest
