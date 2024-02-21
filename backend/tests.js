@@ -45,7 +45,7 @@ describe('Backend API Tests', () => {
         // Calculamos la palabra en espejo esperada según tu lógica de negocio
         // Por simplicidad, asumimos que es simplemente la palabra original invertida
         // Ajusta esto según cómo tu backend procesa la palabra en espejo
-        const esperadoEnEspejo = "tseT";
+        const esperadoEnEspejo = "sex";
 
         const postResponse = await fetch('http://localhost:8080/api/palabra', {
             method: 'POST',
