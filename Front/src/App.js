@@ -11,7 +11,7 @@ const MiComponente = () => {
   };
 
   const enviarTextoAlBackend = () => {
-    const urlBackend = 'http://localhost:8080/api/palabra';
+    const urlBackend = 'https://ingefinal3-back-57jpbmfmwa-uc.a.run.app/api/palabra';
     
     fetch(urlBackend, {
       method: 'POST',
