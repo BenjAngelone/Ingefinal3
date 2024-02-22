@@ -2,7 +2,7 @@ name: Build and Deployyy
 
 on:
   workflow_run:
-    workflows: ["testu"]
+    workflows: ["Docker_compose_Utest"]
     types:
       - completed
 
