@@ -1,8 +1,8 @@
-name: Build and Deploy
+name: Build and Deployyy
 
 on:
   workflow_run:
-    workflows: ["Docker compose + Utest"]
+    workflows: ["testu"]
     types:
       - completed
 
