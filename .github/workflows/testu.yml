@@ -21,11 +21,7 @@ jobs:
            chmod +x ./node_modules/.bin/mocha
            npx mocha tests.js
          working-directory: ./backend
-       - name: Run frontend
-         run: |
-           npm install --force
-           nohup npm start &
-         working-directory: ./Front
+       
        - name: Docker ps
          run: docker ps
        - name: Login to Docker Hub
