@@ -40,7 +40,7 @@ jobs:
           cd backend
           docker build -t $DOCKER_USERNAME/ingefinal3-backend:latest .
           docker push $DOCKER_USERNAME/ingefinal3-backend:latest
-          cd ../frontend
+          cd ../Front
           docker build -t $DOCKER_USERNAME/ingefinal3-front:latest .
           docker push $DOCKER_USERNAME/ingefinal3-front:latest
           cd ../database
