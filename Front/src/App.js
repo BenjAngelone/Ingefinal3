@@ -50,7 +50,7 @@ const MiComponente = () => {
         type="text"
         value={valorInput}
         onChange={handleInputChange}
-        placeholder="Escribe algo..."
+        placeholder="Write somethig."
       />
       <button id="myboton" onClick={enviarTextoAlBackend}>Enviar al Backend</button>
 
