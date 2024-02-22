@@ -46,23 +46,23 @@ const MiComponente = () => {
   
   return (
     <div style={{ textAlign: 'center' }}>
-      <input
+      <input id="myinput"
         type="text"
         value={valorInput}
         onChange={handleInputChange}
         placeholder="Escribe algo..."
       />
-      <button onClick={enviarTextoAlBackend}>Enviar al Backend</button>
+      <button id="myboton" onClick={enviarTextoAlBackend}>Enviar al Backend</button>
 
       {palabraEnEspejo && (
-        <p>Palabra en espejo: {palabraEnEspejo}</p>
+        <p id="mytext">Palabra en espejo: {palabraEnEspejo}</p>
       )}
 
       <table style={{ margin: '20px auto', borderCollapse: 'collapse', width: '50%' }}>
         <thead>
           <tr>
             <th>Palabra</th>
-            <th>Frecuencia</th>
+            <th id="myfrecuencia">Frecuencia</th>
           </tr>
           </thead>
             <tbody>
