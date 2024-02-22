@@ -33,12 +33,12 @@ jobs:
         
        - name: Tag and push Docker images
          run: |
-          docker tag ingefinal3-back:latest ${{ secrets.DOCKERHUB_USERNAME }}/ingefinal3-back:latest
+          docker tag ingefinal3-backend:latest ${{ secrets.DOCKERHUB_USERNAME }}/ingefinal3-backend:latest
           docker tag ingefinal3-front:latest ${{ secrets.DOCKERHUB_USERNAME }}/ingefinal3-front:latest
 
           docker tag mysql ${{ secrets.DOCKERHUB_USERNAME }}/mysql
 
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/ingefinal3-back:latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/ingefinal3-backend:latest
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/ingefinal3-front:latest
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/mysql
     
