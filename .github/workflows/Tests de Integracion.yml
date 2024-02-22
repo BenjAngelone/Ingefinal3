@@ -23,13 +23,13 @@ jobs:
       run: |
         npx playwright install --force
         npm install --force
-      working-directory: ./frontend
+      working-directory: ./Front
 
     - name: Run test
       run: |
         sleep 30
         xvfb-run npx codeceptjs run
-      working-directory: ./frontend
+      working-directory: ./Front
 
     - name: Results
       uses: actions/upload-artifact@v2
