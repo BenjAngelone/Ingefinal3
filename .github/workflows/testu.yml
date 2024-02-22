@@ -28,8 +28,8 @@ jobs:
        # working-directory: ./Front
 
       - name: Login to Docker Hub
-       #  run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
-        run: docker login -u benjaangelone -p Y34YLC7oo
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKE_PASSWORD }}
+        
       - name: Tag and push Docker images
         run: |
           docker tag Ingefinal3-back:latest ${{ secrets.DOCKERHUB_USERNAME }}/Ingefinal3-back:latest
