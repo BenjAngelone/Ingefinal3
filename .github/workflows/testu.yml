@@ -21,9 +21,4 @@ jobs:
           chmod +x ./node_modules/.bin/mocha
           npx mocha tests.js
         working-directory: ./backend
-      
-      - name: Run frontend
-        run: |
-          npm install --force
-          nohup npm start &
-        working-directory: ./frontend
+    
