@@ -49,16 +49,16 @@ jobs:
 
       - name: Push the image to the Google Container Registry (GCR)
         run: |-
-          docker tag benjaangelone/ingefinal3-frontend:latest gcr.io/lucky-outpost-415022/ingefinal3-frontend
+          docker tag benjaangelone/ingefinal3-front:latest gcr.io/lucky-outpost-415022/ingefinal3-front
           docker tag benjaangelone/ingefinal3-backend:latest gcr.io/lucky-outpost-415022/ingefinal3-backend
-          docker push gcr.io/lucky-outpost-415022/ingefinal3-frontend:latest
-          docker push gcr.io/lucky-outpost-415022/ingefinal3-backend:latest
+          docker push gcr.io/lucky-outpost-415022/ingefinal3-front
+          docker push gcr.io/lucky-outpost-415022/ingefinal3-backend
 
       - name: Deploy Frontend
         run: |-
-          gcloud run deploy ingefinal3-frontend \
+          gcloud run deploy ingefinal3-front \
           --region $REGION \
-          --image gcr.io/lucky-outpost-415022/ingefinal3-frontend:latest \
+          --image gcr.io/lucky-outpost-415022/ingefinal3-front:latest \
           --platform "managed" \
           --quiet
       
