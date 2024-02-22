@@ -23,11 +23,12 @@ jobs:
       run: |
         npx playwright install --force
         npm install --force
+        npm install codeceptjs --force 
       working-directory: ./Front
 
     - name: Run test
       run: |
-        sleep 30
+        sleep 10
         xvfb-run npx codeceptjs run
       working-directory: ./Front
 
