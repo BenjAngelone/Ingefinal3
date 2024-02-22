@@ -17,3 +17,11 @@ services:
       - database
     ports:
       - "8080:8080"
+
+  front:
+    build: ./Front
+    depends_on:
+      - database
+      - backend
+    ports:
+      - "5000:5000"
