@@ -1,4 +1,4 @@
-name: Docker compose_Utest
+name: Docker_compose_Utest
 
 on:
   push:
