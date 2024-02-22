@@ -16,15 +16,38 @@ Scenario('Flaky scenario', { retries: 2 }, () => {
   assert.equal(tries, 1);
 });
 
-Scenario('Testing Upload - Error', {retries: 2}, async ({ I }) => {
+Scenario('Testing start ', {retries: 2}, async ({ I }) => {
     I.amOnPage(DOMAIN_URL);
-    I.fillField('input', "Test");
-    //I.click('//button[text()="Enviar al Backend"]');
-    I.click('button');
-    I.wait(1);
-    I.seeText('Palabra en espejo:');
-    I.seeText('Tset');
-    I.seeText('Pollo');
+    I.see('Palabra');
+    //I.fillField('input', "Test");
+   // I.click('//button[text()="Enviar al Backend"]');
+    // I.click('button.*');
+    //I.wait(1);
+    //I.seeText('Palabra en espejo:');
+    //I.seeText('Tset');
+    //I.seeText('Pollo');
+
+});
+Scenario('Testing post ', {retries: 2}, async ({ I }) => {
+  I.amOnPage(DOMAIN_URL);
+  I.fillField('#myinput', "Test")
+  //I.fillField('input', "Test");
+ // I.click('//button[text()="Enviar al Backend"]');
+  // I.click('button.*');
+  //I.wait(1);
+  //I.seeText('Palabra en espejo:');
+  //I.seeText('Tset');
+  //I.seeText('Pollo');
+
+});
+
+Scenario('Testing total ', {retries: 2}, async ({ I }) => {
+  I.amOnPage(DOMAIN_URL);
+  I.fillField('#myinput', "Test")
+  I.click('#myboton');
+  I.wait(1);
+  I.see('tseT');
+ 
 
 });
 

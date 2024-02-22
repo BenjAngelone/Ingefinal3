@@ -14,7 +14,7 @@ exports.config = {
     Playwright: {
       browser: 'chromium',
       url: 'https://ingefinal3-front-57jpbmfmwa-uc.a.run.app',
-      show: true
+      show: false
     }
   },
   include: {

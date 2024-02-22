@@ -39,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "playwright": "1.18"
+    "playwright": "^1.41.2"
   }
 }
