@@ -1,4 +1,4 @@
-name: Build and Deployyy
+name: Deploy
 
 on:
   workflow_run:
